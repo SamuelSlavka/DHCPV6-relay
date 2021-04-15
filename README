@@ -1,0 +1,26 @@
+
+Príklad spustenia:
+	$ sudo ./d6r -s 2001:67c:1220:80c::93e5:dd2 -d -l 
+
+
+
+Zoznam súborov:
+	d6r.cpp
+	Callback.cpp
+	Callback.h
+	Sniffer.cpp
+	Sniffer.h
+	Headers.h
+	Makefile
+	d6r.1
+	manual.pdf
+	README
+
+Problémy/rozšírenia:
+Keď agent spustený s nespravnym názvom interface začne sledovať na interfaci any.
+
+Na získavanie MAC addresy sa agent najskôr pozrie na link-lokalnu adresu klienta ak je založená na MAC adrese vyberie ju. Inak agent zoberie adresu zo Ethernet headru, kde nemusí byť práve klientova adresa.
+
+Pre pole link-address v dhcp relay message som zvolil agentovú adresu, lebo som neprišiel na lepší spôsob.
+
+Agent potrebuje administratívne práva na sledovanie siete.

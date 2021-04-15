@@ -1,0 +1,26 @@
+.TH D6R 1
+.SH NAME
+d6r \- DHCPv6 relay agent with support of inserting MAC address.
+.SH SYNOPSIS
+.B d6r
+\fB\-s\fR \fIserver\fR
+[\fB\-l\fR]
+[\fB\-d\fR]
+[\fB\-i\fR \fIinterface\fR]
+.SH DESCRIPTION
+.B d6r
+passes dhcpv6 messages between client and server and the otherway around. d6r has functionality to add clients MAC address.
+Has functionality to output assigned addreses and also log them to syslog. 
+.SH OPTIONS
+.TP
+.BR \-s ", "\fIserver\fR
+Set IPv6 server address.
+.TP
+.BR \-l\fR
+Turn on logging to syslog.
+.TP
+.BR \-d \fR
+Turn on logging to stdout.
+.TP
+.BR \-i ", "\fIInterface\fR
+Set interface for communication.
