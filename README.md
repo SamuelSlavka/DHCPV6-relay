@@ -6,7 +6,7 @@
   make
 
 #### Compilation:
-  make all
+    make all
   
 #### Execution:
     d6r -s server [-l] [-d] [-i interface]
