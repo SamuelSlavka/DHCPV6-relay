@@ -115,7 +115,6 @@ struct IATAOption
    IAADDR options;
 };
 
-//maybe wrong?
 struct ClientLinkLayerAddress
 {
    uint16_t code;
@@ -166,12 +165,5 @@ typedef enum
    OPTION_IAPREFIX = 26,
    OPTION_CLIENT_LINKLAYER_ADDR = 79
 } dhcpOptions;
-
-/*	
-	for (size_t i = 0; i < lenDhcp; i++)
-	{
-		printf(" %02x", ((char*)(dhcpMsg))[i] & 0xff);
-	} 
-	*/
 
 #endif

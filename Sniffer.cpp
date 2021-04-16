@@ -2,7 +2,6 @@
 
 void Sniffer::configure()
 {
-
 	char errbuf[PCAP_ERRBUF_SIZE];
 
 	//check for active devices
