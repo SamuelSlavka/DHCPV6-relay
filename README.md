@@ -1,15 +1,13 @@
 # DHCPv6 relay agent
 
 #### Dependencies:
-  g++
-  
-  make
+    g++  
+    make
 
 #### Compilation:
     make all
   
 #### Execution:
-    d6r -s server [-l] [-d] [-i interface]
    
    -s: DHCPv6 server IPv6 address.
    
@@ -18,3 +16,6 @@
    -i: Interface on which relay listens if not defined listens on any.
    
    -d: Turn on debug output to stdout
+   
+    d6r -s server [-l] [-d] [-i interface]
+
